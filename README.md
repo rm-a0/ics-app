@@ -1,1 +1,2 @@
-# ics-app
+# Overview
+Multimedia Playlist Manager and Tracker
