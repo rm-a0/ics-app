@@ -1,6 +1,12 @@
 # Ignore build and runtime files
 bin/
 obj/
+*.dll
+*.exe
+*.pdb
+*.deps.json
+*.runtimeconfig.json
+*.runtimeconfig.dev.json
 
 # Ignore IDE-specific files
 .vs/
@@ -9,6 +15,7 @@ obj/
 *.suo
 *.user
 *.userosscache
+*.sln.docstates
 *.sln.iml
 
 # Ignore NuGet packages and restore files
@@ -25,33 +32,25 @@ NuGet.exe
 *.tmp
 *.cache
 
-# Ignore MAUI-specific files
-*.appx
-*.appxbundle
-*.appxupload
-*.ipa
-*.apk
-*.keystore
+# Ignore local configuration (optional, adjust as needed)
+appsettings.*.json
+*.env
+.env.*
+!.env.example
 
 # Ignore test results
 TestResults/
 *.trx
 *.coverage
 
-# Ignore macOS files
+# Ignore OS-specific files
 .DS_Store
+Thumbs.db
+Desktop.ini
 
-# Ignore Rider-specific files
-*.idea/
-*.idea_modules/
-*.iml
-*.ipr
-*.iws
-
-# Ignore Visual Studio Code files
+# Ignore Visual Studio Code files (keep useful templates)
 .vscode/
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
